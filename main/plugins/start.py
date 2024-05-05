@@ -48,9 +48,9 @@ async def notice(event):
 @Drone.on(events.callbackquery.CallbackQuery(data="source"))
 async def source(event):
     await event.edit(source_text,
-                    buttons=[[
+                    buttons=[
                          Button.url("FOR PERSONAL USE", url="t.me/anik_x_pro"),
-                         Button.url("FOR YOUR CHANNEL ", url="t.me/anik_x_pro")]])
+                        ])
                          
                     
 @Drone.on(events.callbackquery.CallbackQuery(data="help"))
